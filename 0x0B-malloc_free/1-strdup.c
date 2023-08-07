@@ -1,39 +1,34 @@
-#include "main.h"
 #include <stdlib.h>
-
+#include "main.h"
 /**
- * str_concat - Concatenates two strings.
- * @s1: The string to be concatenated upon.
- * @s2: The string to be concatenated to s1.
- *
- * Return: If concatenation fails - NULL.
- *         Otherwise - a pointer the newly-allocated space in memory
- *                     containing the concatenated strings.
+ * _strdup - returns a pointer to anewly allocated
+ * space in memory which contains a copy of the
+ * string given as a parameter
+ * @str: string to be newly allocated in memory
+ * Return: NULL if string is empty or insufficient memory
+ * a pointer to the duplicated string (Success)
  */
-char *str_concat(char *s1, char *s2)
+char *_strdup(char *str)
 {
-	char *concat_str;
-	int index, concat_index = 0, len = 0;
+	char *dup;
+	unsigned int i, len;
 
-	if (s1 == NULL)
-		s1 = "";
+	i = 0;
+	len = 0;
 
-	if (s2 == NULL)
-		s2 = "";
-
-	for (index = 0; s1[index] || s2[index]; index++)
-		len++;
-
-	concat_str = malloc(sizeof(char) * len);
-
-	if (concat_str == NULL)
+	if (str == NULL)
 		return (NULL);
 
-	for (index = 0; s1[index]; index++)
-		concat_str[concat_index++] = s1[index];
+	while (str[len])
+		len++;
 
-	for (index = 0; s2[index]; index++)
-		concat_str[concat_index++] = s2[index];
+	dup = malloc(sizeof(char) * (len + 1));
 
-	return (concat_str);
+	if (dup == NULL)
+		return (NULL);
+
+	while ((dup[i] = str[i]) != '\0')
+		i++;
+
+	return (dup);
 }
