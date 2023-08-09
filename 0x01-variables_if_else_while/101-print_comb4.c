@@ -30,7 +30,7 @@ int main(void)
 					{
 						putchar(',');
 						putchar(' ');
-					} 
+					}
 				}
 				num3++;
 			}
