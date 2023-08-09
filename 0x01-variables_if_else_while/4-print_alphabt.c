@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
  * main - prints alphabet in lowercase except q and e, followed by a new line.
- * return 0 (SUCCESS)
+ * Return: 0 (SUCCESS)
  */
 int main(void)
 {
 	char ch;
+	
 	ch = 'a';
 
 	while (ch <= 'z')
