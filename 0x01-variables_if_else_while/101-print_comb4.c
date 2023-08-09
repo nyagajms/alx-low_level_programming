@@ -6,27 +6,37 @@
  */
 int main(void)
 {
-	int n, m, l;
+	int num1;
 
-	for (n = 48; n < 58; n++)
+	int num2;
+
+	int num3;
+
+	num1 = 48;
+	while (num1 <= 56)
 	{
-		for (m = 49; m < 58; m++)
+		num2 = 49;
+		while (num2 <= 57)
 		{
-			for (l = 50; l < 58; l++)
+			num3 <= 50;
+			while (num3 <= 57)
 			{
-				if (l > m && m > n)
+				if (num2 > num1 && num3 > num2)
 				{
-					putchar(n);
-					putchar(m);
-					putchar(l);
-					if (n != 55 || m != 56)
+					putchar(num1);
+					putchar(num2);
+					putchar(num3);
+					if (num1 != 56 || num2 != 57)
 					{
 						putchar(',');
 						putchar(' ');
-					}
+					} 
 				}
+				num3++;
 			}
+			num2++;
 		}
+		num1++;
 	}
 	putchar('\n');
 	return (0);
