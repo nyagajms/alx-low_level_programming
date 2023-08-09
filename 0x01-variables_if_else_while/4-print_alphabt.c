@@ -5,7 +5,7 @@
  *return 0 (SUCCESS)
 */
 
-int main (void)
+int main(void)
 {
 	char = ch;
 
@@ -17,8 +17,8 @@ int main (void)
 		{
 			putchar(ch);
 		}
-		ch ++;
+		ch++;
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
