@@ -8,14 +8,16 @@
 int main(void)
 {
 	char ch;
+	
 	ch = 'a';
-	while (ch<='z')
+	
+	while (ch <= 'z')
 	{
 		putchar(ch);
-		ch++;		
+		ch++;
 	}
 	ch = 'A';
-	while (ch <='Z')
+	while (ch <= 'Z')
 	{
 		putchar(ch);
 		ch++;
