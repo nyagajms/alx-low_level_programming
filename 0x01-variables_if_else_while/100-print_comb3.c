@@ -15,6 +15,7 @@ int main(void)
 
 	while (num1 <= 56)
 	{
+		num2 = 49;
 		while (num2 <= 57)
 		{
 			if (num2 > num1)
