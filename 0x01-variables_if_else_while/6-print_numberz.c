@@ -10,7 +10,8 @@ int main(void)
 	num = 0;
 	while(num <= 9)
 	{
-		putcher('0' + num);		
+		putcher('0' + num);
+		num++;
 	}
 	putchar('\n');
 	return (0);
