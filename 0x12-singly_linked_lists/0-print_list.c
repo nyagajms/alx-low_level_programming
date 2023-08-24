@@ -2,7 +2,7 @@
 
 /**
  * print_list - prints elements of a list_t list.
- * @h: singly linked 
+ * @h: singly linked
  * Return: number of elements
  */
 
