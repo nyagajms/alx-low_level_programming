@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 #include <stdio.h>
 
 /**
@@ -70,3 +71,5 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
+=======
+>>>>>>> 4d9d3baf0c1d5aa6ea3ca8accb2d5f73f067ec0d
